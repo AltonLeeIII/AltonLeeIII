@@ -3839,12 +3839,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.System.Exps.zeropad,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Text.Acts.SetVisible,
 		C3.Behaviors.Pin.Acts.PinByProperties,
 		C3.Behaviors.Bullet.Acts.SetBounceOffSolids,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
 		C3.Behaviors.Bullet.Acts.Bounce,
+		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Sprite.Acts.SetPos
+		C3.Plugins.Sprite.Acts.SetCollisions
 	];
 };
 self.C3_JsPropNameTable = [
@@ -3885,7 +3887,6 @@ self.C3_JsPropNameTable = [
 	{otherCup: 0},
 	{UBlueAttack: 0},
 	{blueScore: 0},
-	{blueScore2: 0},
 	{ScoreBoard: 0},
 	{redScore: 0},
 	{Bullet: 0},
@@ -3893,12 +3894,16 @@ self.C3_JsPropNameTable = [
 	{Sprite: 0},
 	{Jumpthru: 0},
 	{Platform3: 0},
+	{Winner: 0},
+	{Text: 0},
 	{blueHealth: 0},
 	{redHealth: 0},
 	{RedEyesGroup: 0},
 	{BlueEyesGroup: 0},
 	{AllowInputBlue: 0},
-	{AllowInputRed: 0}
+	{AllowInputRed: 0},
+	{AllowInputBlue2: 0},
+	{AllowInputRed2: 0}
 ];
 }
 
@@ -4028,7 +4033,12 @@ self.C3_ExpressionFuncs = [
 		() => 200,
 		() => 5,
 		() => 430,
-		() => 160
+		() => 160,
+		() => "Player1 Controls2",
+		() => "MovementBlue2",
+		() => "Player2 Controls2",
+		() => "MovementRed2",
+		() => "Group2"
 ];
 
 
