@@ -1,6 +1,6 @@
 {
-	"name": "NewProject",
-	"short_name": "NewProject",
+	"name": "Blue vs Red",
+	"short_name": "BvR",
 	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
